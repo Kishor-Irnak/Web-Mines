@@ -123,16 +123,16 @@
         <main class="flex-1 flex flex-col items-center justify-start mt-6 md:mt-12 px-4">
             
             <h1 class="text-center text-white text-[42px] md:text-[64px] leading-[1.1] font-semibold tracking-tight max-w-[700px]">
-                Building the future with AI and strategy
+                Websites That Turn Visitors Into Customers
             </h1>
             
             <p class="text-center text-white/90 text-[15px] md:text-[18px] mt-6 max-w-[550px] leading-relaxed font-medium">
-                We help organizations unlock growth and efficiency through data-driven consulting and intelligent automation.
+                We create high-converting landing pages for SaaS, clinics, salons, real estate businesses, and startups that want more leads and sales.
             </p>
 
             <div class="flex flex-col sm:flex-row gap-4 mt-8 w-full sm:w-auto px-4 justify-center items-center">
                 <button class="bg-[#1c558e]/80 backdrop-blur-sm border border-white/10 text-white px-8 py-3.5 rounded-full font-bold text-[12px] tracking-widest w-full sm:w-auto hover:bg-[#1c558e] transition-colors shadow-lg">
-                    VIEW DEMO
+                    VIEW WORK
                 </button>
                 <button class="bg-brandYellow text-black px-6 py-3 rounded-full font-bold text-[12px] tracking-widest flex items-center justify-center gap-3 w-full sm:w-auto hover:bg-[#c4ec31] transition-colors shadow-lg">
                     GET STARTED
