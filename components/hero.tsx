@@ -1,6 +1,15 @@
 import React from 'react';
 
 export default function Hero() {
+    const cardImages = [
+        '/card1.png',
+        '/card2.png',
+        '/card3.png',
+        '/card4.png',
+        '/card5.png',
+        '/card6.png',
+    ];
+
     return (
         <>
             <style dangerouslySetInnerHTML={{
@@ -125,149 +134,20 @@ export default function Hero() {
 
                                 {/* First set of cards */}
                                 <div className="flex gap-6 bg-transparent pr-6">
-                                    <div className="hero-card bg-[#F7F8F7] p-4 text-[#141210]">
-                                        <div className="flex justify-between items-center mb-4">
-                                            <div className="w-6 h-6 bg-[#141210] rounded-full text-[#F7F8F7] flex items-center justify-center text-xs">~</div>
-                                            <div className="text-xs font-bold bg-gray-200 px-2 py-1 rounded">Performance</div>
+                                    {cardImages.map((src, index) => (
+                                        <div key={`card-1-${index}`} className="hero-card bg-transparent border-0 overflow-hidden">
+                                            <img src={src} alt={`Card ${index + 1}`} className="w-full h-full object-cover object-top rounded-[20px]" />
                                         </div>
-                                        <div className="text-3xl font-bold mb-1 text-[#1C80CD]">49%</div>
-                                        <div className="w-full h-[1px] bg-gray-300 my-3"></div>
-                                        <div className="grid grid-cols-2 gap-2 text-[10px] text-gray-600 font-semibold">
-                                            <div className="bg-gray-100 p-2 rounded">Strategy</div>
-                                            <div className="bg-gray-100 p-2 rounded">AI Focused</div>
-                                            <div className="bg-gray-100 p-2 rounded">Grow Faster</div>
-                                            <div className="bg-gray-100 p-2 rounded">Build Smart</div>
-                                        </div>
-                                    </div>
-
-                                    <div className="hero-card bg-[#F7F8F7] p-4 flex flex-col justify-between text-[#141210]">
-                                        <div>
-                                            <div className="flex gap-2 mb-3">
-                                                <span className="text-[10px] font-bold px-2 py-1 bg-gray-200 rounded">Ional</span>
-                                                <span className="text-[10px] font-bold px-2 py-1 bg-gray-200 rounded">Strategic</span>
-                                            </div>
-                                            <div className="flex gap-2 mb-4">
-                                                <span className="text-[10px] font-bold px-2 py-1 bg-gray-200 rounded">Smarter</span>
-                                                <span className="text-[10px] font-bold px-2 py-1 bg-gray-200 rounded">Grow Faster</span>
-                                            </div>
-                                        </div>
-                                        <div>
-                                            <div className="text-xs text-gray-500 font-semibold mb-1">Data Points</div>
-                                            <div className="text-4xl font-bold tracking-tight text-[#1C80CD]">520k+</div>
-                                        </div>
-                                    </div>
-
-                                    <div className="hero-card bg-gradient-to-br from-[#67CFCC] to-[#1C80CD] p-6 flex flex-col items-center justify-center text-center text-[#F7F8F7] relative overflow-hidden border-2 border-[#F7F8F7]/60">
-                                        <div className="absolute top-0 left-0 w-full h-1/2 bg-gradient-to-b from-[#F7F8F7]/20 to-transparent"></div>
-                                        <div className="w-12 h-12 bg-[#F7F8F7]/20 rounded-full flex items-center justify-center backdrop-blur-md mb-4 border border-[#F7F8F7]/30 shadow-lg">
-                                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#F7F8F7" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
-                                                <line x1="12" y1="5" x2="12" y2="19" />
-                                                <line x1="5" y1="12" x2="19" y2="12" />
-                                            </svg>
-                                        </div>
-                                        <h3 className="text-xl font-bold mb-1">Data training</h3>
-                                        <p className="text-xs text-[#E8F98A] font-medium">Upload your content</p>
-                                    </div>
-
-                                    <div className="hero-card bg-[#141210] p-5 text-[#F7F8F7] flex flex-col justify-center border border-gray-800">
-                                        <div className="w-8 h-8 rounded-full bg-[#839D53]/20 flex items-center justify-center mb-4">
-                                            <div className="w-3 h-3 bg-[#839D53] rounded-full"></div>
-                                        </div>
-                                        <h3 className="text-lg font-semibold leading-tight text-[#F7F8F7]">
-                                            Expertise that Combines Strategy, Data, and Artificial Intelligence
-                                        </h3>
-                                    </div>
-
-                                    <div className="hero-card bg-[#F7F8F7] p-4 text-[#141210]">
-                                        <div className="text-xs font-bold mb-1">Intelligence</div>
-                                        <div className="text-[10px] text-gray-500 mb-6">Daily Devices</div>
-                                        <div className="relative w-full h-24 flex items-end gap-1">
-                                            <div className="w-1/6 bg-[#4BA9E0]/30 h-[30%] rounded-t-sm"></div>
-                                            <div className="w-1/6 bg-[#4BA9E0]/50 h-[50%] rounded-t-sm"></div>
-                                            <div className="w-1/6 bg-[#56A5E3]/60 h-[40%] rounded-t-sm"></div>
-                                            <div className="w-1/6 bg-[#56A5E3]/80 h-[70%] rounded-t-sm"></div>
-                                            <div className="w-1/6 bg-[#1C80CD]/80 h-[60%] rounded-t-sm"></div>
-                                            <div className="w-1/6 bg-[#1C80CD] h-[90%] rounded-t-sm"></div>
-                                            <svg className="absolute inset-0 w-full h-full" preserveAspectRatio="none" viewBox="0 0 100 100">
-                                                <polyline fill="none" stroke="#67CFCC" strokeWidth="3" points="0,70 20,50 40,60 60,30 80,40 100,10" />
-                                            </svg>
-                                        </div>
-                                    </div>
+                                    ))}
                                 </div>
 
                                 {/* Duplicated set for continuous loop */}
                                 <div className="flex gap-6 pr-6" aria-hidden="true">
-                                    <div className="hero-card glass-bg p-4 flex flex-col gap-2 opacity-80">
-                                        <div className="w-full h-8 bg-[#F7F8F7]/20 rounded-md"></div>
-                                        <div className="w-full h-24 bg-[#F7F8F7]/10 rounded-md mt-2"></div>
-                                    </div>
-                                    <div className="hero-card bg-[#F7F8F7] p-4 text-[#141210]">
-                                        <div className="flex justify-between items-center mb-4">
-                                            <div className="w-6 h-6 bg-[#141210] rounded-full text-[#F7F8F7] flex items-center justify-center text-xs">~</div>
-                                            <div className="text-xs font-bold bg-gray-200 px-2 py-1 rounded">Performance</div>
+                                    {cardImages.map((src, index) => (
+                                        <div key={`card-2-${index}`} className="hero-card bg-transparent border-0 overflow-hidden">
+                                            <img src={src} alt={`Card ${index + 1} clone`} className="w-full h-full object-cover object-top rounded-[20px]" />
                                         </div>
-                                        <div className="text-3xl font-bold mb-1 text-[#1C80CD]">49%</div>
-                                        <div className="w-full h-[1px] bg-gray-300 my-3"></div>
-                                        <div className="grid grid-cols-2 gap-2 text-[10px] text-gray-600 font-semibold">
-                                            <div className="bg-gray-100 p-2 rounded">Strategy</div>
-                                            <div className="bg-gray-100 p-2 rounded">AI Focused</div>
-                                            <div className="bg-gray-100 p-2 rounded">Grow Faster</div>
-                                            <div className="bg-gray-100 p-2 rounded">Build Smart</div>
-                                        </div>
-                                    </div>
-                                    <div className="hero-card bg-[#F7F8F7] p-4 flex flex-col justify-between text-[#141210]">
-                                        <div>
-                                            <div className="flex gap-2 mb-3">
-                                                <span className="text-[10px] font-bold px-2 py-1 bg-gray-200 rounded">Ional</span>
-                                                <span className="text-[10px] font-bold px-2 py-1 bg-gray-200 rounded">Strategic</span>
-                                            </div>
-                                            <div className="flex gap-2 mb-4">
-                                                <span className="text-[10px] font-bold px-2 py-1 bg-gray-200 rounded">Smarter</span>
-                                                <span className="text-[10px] font-bold px-2 py-1 bg-gray-200 rounded">Grow Faster</span>
-                                            </div>
-                                        </div>
-                                        <div>
-                                            <div className="text-xs text-gray-500 font-semibold mb-1">Data Points</div>
-                                            <div className="text-4xl font-bold tracking-tight text-[#1C80CD]">520k+</div>
-                                        </div>
-                                    </div>
-                                    <div className="hero-card bg-gradient-to-br from-[#67CFCC] to-[#1C80CD] p-6 flex flex-col items-center justify-center text-center text-[#F7F8F7] relative overflow-hidden border-2 border-[#F7F8F7]/60">
-                                        <div className="absolute top-0 left-0 w-full h-1/2 bg-gradient-to-b from-[#F7F8F7]/20 to-transparent"></div>
-                                        <div className="w-12 h-12 bg-[#F7F8F7]/20 rounded-full flex items-center justify-center backdrop-blur-md mb-4 border border-[#F7F8F7]/30 shadow-lg">
-                                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#F7F8F7" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
-                                                <line x1="12" y1="5" x2="12" y2="19" />
-                                                <line x1="5" y1="12" x2="19" y2="12" />
-                                            </svg>
-                                        </div>
-                                        <h3 className="text-xl font-bold mb-1">Data training</h3>
-                                        <p className="text-xs text-[#E8F98A] font-medium">Upload your content</p>
-                                    </div>
-                                    <div className="hero-card bg-[#141210] p-5 text-[#F7F8F7] flex flex-col justify-center border border-gray-800">
-                                        <div className="w-8 h-8 rounded-full bg-[#839D53]/20 flex items-center justify-center mb-4">
-                                            <div className="w-3 h-3 bg-[#839D53] rounded-full"></div>
-                                        </div>
-                                        <h3 className="text-lg font-semibold leading-tight text-[#F7F8F7]">
-                                            Expertise that Combines Strategy, Data, and Artificial Intelligence
-                                        </h3>
-                                    </div>
-                                    <div className="hero-card bg-[#F7F8F7] p-4 text-[#141210]">
-                                        <div className="text-xs font-bold mb-1">Intelligence</div>
-                                        <div className="text-[10px] text-gray-500 mb-6">Daily Devices</div>
-                                        <div className="relative w-full h-24 flex items-end gap-1">
-                                            <div className="w-1/6 bg-[#4BA9E0]/30 h-[30%] rounded-t-sm"></div>
-                                            <div className="w-1/6 bg-[#4BA9E0]/50 h-[50%] rounded-t-sm"></div>
-                                            <div className="w-1/6 bg-[#56A5E3]/60 h-[40%] rounded-t-sm"></div>
-                                            <div className="w-1/6 bg-[#56A5E3]/80 h-[70%] rounded-t-sm"></div>
-                                            <div className="w-1/6 bg-[#1C80CD]/80 h-[60%] rounded-t-sm"></div>
-                                            <div className="w-1/6 bg-[#1C80CD] h-[90%] rounded-t-sm"></div>
-                                            <svg className="absolute inset-0 w-full h-full" preserveAspectRatio="none" viewBox="0 0 100 100">
-                                                <polyline fill="none" stroke="#67CFCC" strokeWidth="3" points="0,70 20,50 40,60 60,30 80,40 100,10" />
-                                            </svg>
-                                        </div>
-                                    </div>
-                                    <div className="hero-card glass-bg p-4 flex flex-col justify-end opacity-80">
-                                        <div className="w-full h-32 bg-[#F7F8F7]/10 rounded-md"></div>
-                                    </div>
+                                    ))}
                                 </div>
 
                             </div>
