@@ -60,7 +60,7 @@ export default function ExpertiseSection() {
                 </div>
 
                 {/* Gray Outer Container wrapping all 4 cards */}
-                <div className="bg-[#EBEBEB] rounded-[40px] p-[14px]">
+                <div className="bg-[#EBEBEB] rounded-[40px] p-[10px]">
                     <div className="grid grid-cols-1 md:grid-cols-2 gap-[14px]">
                         {features.map((feature, index) => (
                             <div
