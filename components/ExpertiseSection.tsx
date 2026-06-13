@@ -37,7 +37,7 @@ const features: FeatureCard[] = [
 export default function ExpertiseSection() {
     return (
         <section className="w-full bg-white py-16 md:py-24 lg:py-32">
-            <div className="max-w-[1200px] mx-auto px-4 sm:px-6 lg:px-8">
+            <div className="max-w-[1400px] mx-auto px-4 sm:px-6 lg:px-8">
 
                 {/* Header Section */}
                 <div className="flex flex-col items-center text-center mb-12 md:mb-16">

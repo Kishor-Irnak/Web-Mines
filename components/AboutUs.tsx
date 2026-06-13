@@ -4,7 +4,7 @@ export default function AboutUs() {
     return (
         <section className="bg-white py-16 px-4 md:px-8 font-sans antialiased text-[#141210]">
             {/* Increased max-width to make it wider */}
-            <div className="max-w-7xl mx-auto">
+            <div className="max-w-[1400px] mx-auto">
 
                 {/* Header Section */}
                 <div className="flex flex-col items-center text-center mb-14">

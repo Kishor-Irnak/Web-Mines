@@ -32,7 +32,7 @@ export default function Services() {
 
     return (
         <section className="bg-white py-16 md:py-24 px-4 sm:px-6 lg:px-8 font-sans">
-            <div className="max-w-7xl mx-auto">
+            <div className="max-w-[1400px] mx-auto">
 
                 {/* Header Section */}
                 <div className="flex flex-col items-center text-center mb-12 md:mb-16">
